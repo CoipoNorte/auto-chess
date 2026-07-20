@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+*.spec.bak
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# AutoChess
+.autochess_config.json
+.autochess.log
+
+# Build artifacts
+*.exe
+*.app
+*.dmg
+
+# PyInstaller
+*.manifest
+*.toc

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auto-chess"
+version = "1.0.0"
+description = "Asistente de ajedrez para accesibilidad - Herramienta de ayuda para personas con túnel carpiano"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+
+dependencies = [
+    "PyQt5>=5.15.0",
+    "python-chess>=1.9.0",
+    "mss>=9.0.0",
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "PyAutoGUI>=0.9.54",
+    "pynput>=1.7.6",
+]
+
+[project.scripts]
+auto-chess = "auto_chess.main:main"
+
+[tool.setuptools.packages.find]
+include = ["auto_chess*"]
